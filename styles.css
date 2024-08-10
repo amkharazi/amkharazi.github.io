@@ -149,14 +149,14 @@ label {
   font-weight: 900;
   position: absolute;
   transform: rotateZ(-90deg);
-  width: 27.8rem;
+  width: 31.6rem;
   /* +-3.8 for each item added/removed */
   font-size: 1.25rem;
   font-family: "Arial Black", sans-serif;
   background: #011590;
   left: 0;
   transform-origin: 0 0;
-  top: 27.8rem;
+  top: 31.6rem;
   box-sizing: border-box;
   padding: 0.125rem 0.75rem;
 }
@@ -320,6 +320,17 @@ text-decoration: none;
 }
 
 .window.projects {
+  width: 50%;
+  min-width: 50%;
+  left: 25%;
+  margin-top: 0;
+  position: sticky;
+  top: 5rem;
+  height: 20rem;
+  min-height: 20rem;
+}
+
+.window.games {
   width: 50%;
   min-width: 50%;
   left: 25%;
@@ -669,6 +680,7 @@ textarea:focus {
 #windows-trash-input-max:checked ~ #all-windows .trash,
 #windows-documents-input-max:checked ~ #all-windows .documents,
 #windows-directory-projects-max:checked ~ #all-windows .projects,
+#windows-directory-games-max:checked ~ #all-windows .games,
 #windows-minesweeper-input-max:checked ~ #all-windows .minesweeper,
 #windows-update-input-max:checked ~ #all-windows .update,
 #windows-help-input-max:checked ~ #all-windows .help {
@@ -684,6 +696,7 @@ textarea:focus {
 #windows-trash-input:checked ~ #all-windows .trash,
 #windows-documents-input:checked ~ #all-windows .documents,
 #windows-directory-projects:checked ~ #all-windows .projects,
+#windows-directory-games:checked ~ #all-windows .games,
 #windows-minesweeper-input:checked ~ #all-windows .minesweeper,
 #windows-update-input:checked ~ #all-windows .update,
 #windows-help-input:checked ~ #all-windows .help {
@@ -694,6 +707,7 @@ textarea:focus {
 #windows-trash-input:checked ~ #start-bar .trash-tab,
 #windows-documents-input:checked ~ #start-bar .documents-tab,
 #windows-directory-projects:checked ~ #start-bar .projects-tab,
+#windows-directory-games:checked ~ #start-bar .games-tab,
 #windows-minesweeper-input:checked ~ #start-bar .minesweeper-tab,
 #windows-update-input:checked ~ #start-bar .update-tab,
 #windows-help-input:checked ~ #start-bar .help-tab {
@@ -704,6 +718,7 @@ textarea:focus {
 #windows-trash-input-min:checked ~ #all-windows .trash,
 #windows-documents-input-min:checked ~ #all-windows .documents,
 #windows-directory-projects-min:checked ~ #all-windows .projects,
+#windows-directory-games-min:checked ~ #all-windows .games,
 #windows-minesweeper-input-min:checked ~ #all-windows .minesweeper,
 #windows-update-input-min:checked ~ #all-windows .update,
 #windows-help-input-min:checked ~ #all-windows .help {
@@ -714,6 +729,7 @@ textarea:focus {
 #windows-trash-input:checked ~ #start-bar .trash-tab,
 #windows-documents-input:checked ~ #start-bar .documents-tab,
 #windows-directory-projects:checked ~ #start-bar .projects-tab,
+#windows-directory-games:checked ~ #start-bar .games-tab,
 #windows-minesweeper-input:checked ~ #start-bar .minesweeper-tab,
 #windows-update-input:checked ~ #start-bar .update-tab,
 #windows-help-input:checked ~ #start-bar .help-tab {
@@ -724,6 +740,7 @@ textarea:focus {
 #windows-trash-input-min:checked ~ #start-bar .trash-tab,
 #windows-documents-input-min:checked ~ #start-bar .documents-tab,
 #windows-directory-projects-min:checked ~ #start-bar .projects-tab,
+#windows-directory-games-min:checked ~ #start-bar .games-tab,
 #windows-minesweeper-input-min:checked ~ #start-bar .minesweeper-tab,
 #windows-update-input-min:checked ~ #start-bar .update-tab,
 #windows-help-input-min:checked ~ #start-bar .help-tab {
@@ -734,6 +751,7 @@ textarea:focus {
 #windows-trash-input-on-top:checked ~ #all-windows .trash,
 #windows-documents-input-on-top:checked ~ #all-windows .documents,
 #windows-directory-projects-on-top:checked ~ #all-windows .projects,
+#windows-directory-games-on-top:checked ~ #all-windows .games,
 #windows-minesweeper-input-on-top:checked ~ #all-windows .minesweeper,
 #windows-update-input-on-top:checked ~ #all-windows .update,
 #windows-help-input-on-top:checked ~ #all-windows .help {
