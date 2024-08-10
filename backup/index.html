@@ -19,7 +19,6 @@
   <!-- Minimize Windows -->
   <input type="checkbox" id="windows-ie-input-min" name="windows-ie-input-min" />
   <input type="checkbox" id="windows-documents-input-min" name="windows-documents-input-min" />
-  <input type="checkbox" id="windows-directory-projects-min" name="windows-directory-projects-min" />
   <input type="checkbox" id="windows-help-input-min" name="windows-help-input-min" /> 
   <input type="checkbox" id="windows-update-input-min" name="windows-update-input-min" />
   <input type="checkbox" id="windows-notepad-input-min" name="windows-notepad-min" /> 
@@ -28,7 +27,6 @@
   <!-- Maximize Windows -->
   <input type="checkbox" id="windows-ie-input-max" name="windows-ie-input-max" />
   <input type="checkbox" id="windows-documents-input-max" name="windows-documents-input-max" />
-  <input type="checkbox" id="windows-directory-projects-max" name="windows-directory-projects-max" />
   <input type="checkbox" id="windows-help-input-max" name="windows-help-input-max" /> 
   <input type="checkbox" id="windows-update-input-max" name="windows-update-input-max" /> 
   <input type="checkbox" id="windows-notepad-input-max" name="windows-notepad-max" /> 
@@ -37,7 +35,6 @@
   <!-- Window Order -->
   <input type="radio" id="windows-ie-input-on-top" name="windows-order" /> 
   <input type="radio" id="windows-documents-input-on-top" name="windows-order" />
-  <input type="radio" id="windows-directory-projects-on-top" name="windows-order" />
   <input type="radio" id="windows-help-input-on-top" name="windows-order" /> 
   <input type="radio" id="windows-update-input-on-top" name="windows-order" /> 
   <input type="radio" id="windows-notepad-input-on-top" name="windows-order" />
@@ -46,7 +43,6 @@
   <!-- Window Visibility -->
   <input type="checkbox" id="windows-ie-input" name="windows-ie-input" />
   <input type="checkbox" id="windows-documents-input" name="windows-documents-input" />
-  <input type="checkbox" id="windows-directory-projects" name="windows-directory-projects" />
   <input type="checkbox" id="windows-help-input" name="windows-help-input" /> 
   <input type="checkbox" id="windows-update-input" name="windows-update-input" /> 
   <input type="checkbox" id="windows-notepad-input" name="windows-notepad-input" />
@@ -109,59 +105,12 @@
 
       <a target="_blank" href="https://github.com/amkharazi" class="desktop-item" id="draggable-icon7"><span class="icon"><img src="images/readarticle-logo.png" alt="" /></span><span class="text">Read Article</span></a>
       
-
-    <!--            PROJECTS                -->
-
-      <label for="windows-directory-projects" class="desktop-item" id="draggable-icon2">
-        <div class="icon"><img src="images/directory-logo.png" alt="" /> </div>
-        <div class="text">Projects</div>
-      </label>
-
-    <!--            PROJECTS                -->
+      
 
      
       
     </div>
   <div id="all-windows">
-
-    <!--            PROJECTS                -->
-
-    <div class="window projects windows-box-shadow">
-        <div class="header"><label for="windows-directory-projects-on-top">Projects</label>
-            <div class="header-buttons">
-                <label for="windows-directory-projects-min" class="minimize windows-box-shadow"></label>
-                <label for="windows-directory-projects-max" class="maximize windows-box-shadow"></label>
-                <label for="windows-directory-projects" class="close windows-box-shadow">X</label>
-            </div>
-        </div>
-        <div class="options line">
-            <div class="item">File</div>
-            <div class="item">Edit</div>
-            <div class="item">Views</div>
-            <div class="item">Go</div>
-            <div class="item">Favourites</div>
-            <div class="item">Help</div>
-        </div>
-        <div class="content white">
-            <!-- <input type="radio" name="documents-radio" id="secret-codes" />
-            <input type="radio" name="documents-radio" id="diary" />
-            <label class="file secret-codes" for="secret-codes">
-                <span class="image"><img src="images/text.png" alt="" /></span>
-                <span class="text">Secret_Codes.txt</span>
-            </label>
-            <label class="file diary" for="diary">
-                <span class="image"><img src="images/text2.png" alt="" /></span>
-                <span class="text">Diary.rtf</span>
-            </label> -->
-        </div>
-    </div>
-
-
-
-
-    <!--            PROJECTS                -->
-
-
       <div class="window ie windows-box-shadow">
           <div class="header"><label for="windows-ie-input-on-top">FJOLT</label>
               <div class="header-buttons">
@@ -296,6 +245,10 @@
                   <span class="image"><img src="images/music.png" alt="" /></span>
                   <span class="text">itunes.exe</span>
               </label>
+              <label for="windows-minesweeper-input" class="desktop-item" id="draggable-icon4">
+                <div class="icon"><img src="images/mine-logo.png" alt="" /> </div>
+                <div class="text">Minesweeper</div>
+            </label>
           </div>
       </div>
       <div class="window documents windows-box-shadow">
@@ -454,7 +407,6 @@
               <label for="windows-ie-input-min" class="ie-tab tab windows-box-shadow"><span><img src="images/internet-logo-big.png" alt="" /></span><span>Internet Explorer</span></label>
               <label for="windows-help-input-min" class="help-tab tab windows-box-shadow"><span><img src="images/Help.png" alt="" /></span><span>Help Center</span></label>
               <label for="windows-notepad-input-min" class="notepad-tab tab windows-box-shadow"><span><img src="images/notepad-logo.png" alt="" /></span><span>Notepad</span></label>
-              <label for="windows-directory-projects-min" class="projects-tab tab windows-box-shadow"><span><img src="images/directory-logo.png" alt="" /></span><span>Projects</span></label>
               <label for="windows-documents-input-min" class="documents-tab tab windows-box-shadow"><span><img src="images/doc-logo.png" alt="" /></span><span>Documents</span></label>
               <label for="windows-update-input-min" class="update-tab tab windows-box-shadow"><span><img src="images/update-logo.png" alt="" /></span><span>Windows Update</span></label>
               <label for="windows-trash-input-min" class="trash-tab tab windows-box-shadow"><span><img src="images/trashbin-logo.png" alt="" /></span><span>Recycle Bin</span></label>
@@ -472,14 +424,13 @@
                       <li><label for="windows-notepad-input"><img src="images/notepad-logo.png" alt="" /> Notepad</label></li>
                   </ul>
               </li>
-              <li><label for="windows-directory-projects"><img src="images/directory-logo.png" style="width: 1.5rem;" alt="" /> Projects</label></li>
               <li><label for="windows-documents-input"><img src="images/doc-logo.png" style="width: 1.5rem;" alt="" /> Documents</label></li>
               <li class="line"><label for="windows-help-input"><img src="images/Help.png" style="width: 1.5rem;" alt="" /> Help</label></li>
               <li><label for="login-screen-input"><img src="images/login-logo.png" style="margin: 0 0.5rem 0 0;" alt="" /> Log Off <span class="spiderman logout-prompt"> Spiderman...</span><span class="zark-muckerberg logout-prompt"> Zark Muckerberg...</span><span class="donald-trump logout-prompt"> Donald Trump...</span></label></li>
               <li><label for="shutdown-screen-input"><img src="images/shutdown-logo.png" style="margin: 0 0.5rem 0 0;" alt="" /> Shutdown</label></li>
           </ul>
       </div>
-      <div id="time-options">time</div>
+      <div id="time-options"></div>
   </div>
 </form>
 
