@@ -1,9 +1,346 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="mobile-menu-button button-98">☰ Menu</button>
+            <ul class="nav-links">
+                <li><a href="#profile" class="button-98">Profile</a></li>
+                <li><a href="#bulletin" class="button-98">News</a></li>
+                <li><a href="#education" class="button-98">Education</a></li>
+                <li><a href="#experience" class="button-98">Experience</a></li>
+                <li><a href="#publications" class="button-98">Publications</a></li>
+                <li><a href="#projects" class="button-98">Projects</a></li>
+                <li><a href="./data/cv.pdf" target="_blank" class="button-98">View CV</a></li>
+                <li><a href="./data/resume.pdf" target="_blank" class="button-98">View Resume</a></li>
+                <li><a href="#contact" class="button-98">Contact</a></li>
+                <li><a href="#games" class="button-98">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="win98-window">
+            <div class="window-title">
+                <span>Character Profile</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="profile-section">
+                    <div class="character-card">
+                        <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+                    </div>
+                    <div class="backstory-container">
+                        <h2>Backstory</h2>
+                        <div class="backstory-text">
+                            In the ancient halls of Amirkabir Keep, amid stone cloisters steeped in logic and lore, young Amir began his long apprenticeship in the hidden arts of Machinecraft. Tireless in his pursuit, he rose swiftly among the learned, mastering the subtleties of Deep Thought, the lost art of Sight Beyond Sight (known among the sages as Visioncraft), and the silent weaving of Networks Unseen. Upon completing his first great work, he journeyed to the austere spires of Tarbiat Modares Citadel, where he now stands foremost among the Order of Minds.
+                            <br><br>
+                            Drawn ever deeper into the veiled Mysteries of Vision Transformers—arcane engines binding sight and mind—Amir seeks to unearth forgotten patterns from the buried magics of tensor and manifold. In parallel with his solitary studies, he has pledged service to the Guild of Neuromatch, mapping the labyrinths of the living brain, and to the House of Digipay, where he forges automata to test and temper the merchant magics of the realm. A traveler between the realms of mind, machine, and myth, Amir weaves his sigils across the shifting firmament of knowledge, etching new runes upon the dark and towering walls of human understanding.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bulletin" class="win98-window">
+            <div class="window-title">
+                <span>Bulletin Board</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="latest-news" id="latest-news">
+                </div>
+                <div style="text-align: center;">
+                    <button id="more-news-btn" class="button-98">All News</button>
+                </div>
+            </div>
+        </section>
+          
+        <div class="popup-window win98-window" id="news-popup">
+            <div class="window-title">
+                <span>All News</span>
+                <div class="window-controls">
+                    <button class="button-98" disabled>_</button>
+                    <button class="button-98" disabled>□</button>
+                    <button class="button-98" id="close-news">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div id="all-news">
+                </div>
+            </div>
+        </div>
+
+        <section id="education" class="win98-window">
+            <div class="window-title">
+                <span>Education Quest Log</span>
+            </div>
+            <div class="window-content">
+                <div class="grid-container">
+                    <div class="item-card">
+                        <h3>Master's Degree</h3>
+                        <p>Computer Science</p>
+                        <p>Tarbiat Modares University (TMU)</p>
+                        <p>2022 – Present</p>
+                        <p class="education-stats">
+                            GPA 4.0/4.0 | Rank 1st
+                        </p>
+                    </div>
         
-    </head>
-    <body>
-        Under Construction!
-    </body>
-</html>
+                    <div class="item-card">
+                        <h3>Bachelor's Degree</h3>
+                        <p>Computer Science</p>
+                        <p>Amirkabir University of Technology (AUT)</p>
+                        <p>2017 – 2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="experience" class="win98-window">
+            <div class="window-title">
+                <span>Adventure Quest Log</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="adventure-log">
+
+                    <div class="adventure-section">
+                        <h3 class="subsection-title">Research Journey</h3>
+                        <div class="adventure-timeline">
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">2024 – 2025</div>
+                                <div class="adventure-content">
+                                    <h4>Impact Scholar of Neuromatch</h4>
+                                    <p>Ventured alongside a wonderful fellowship into the labyrinths of brain and machine, studying nonlinear CEBRA and ancient spatial filters to uncover hidden patterns of the mind.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">2024 – Present</div>
+                                <div class="adventure-content">
+                                    <h4>Architect of Intelligent Tests</h4>
+                                    <p>Led a pioneering guild at the House of Digipay, where I and my trusted team forged enchanted frameworks using LLMs and Visioncraft, crafting automated rites to test and safeguard merchant magics.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">2023 – Present</div>
+                                <div class="adventure-content">
+                                    <h4>Contributing Sage at DeepTenLab</h4>
+                                    <p>As a long-standing contributor to the DeepTenLab guild, I shaped modular spellbooks for tensor and manifold magic, guiding the weaving of visions, scrolls, and brainwaves alike.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="adventure-section">
+                        <h3 class="subsection-title">Teaching Missions</h3>
+                        <div class="adventure-timeline">
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">Summer 2024</div>
+                                <div class="adventure-content">
+                                    <h4>Assistant at Neuromatch Academy</h4>
+                                    <p>Assisted scholars on their quest through Computational Neuroscience, supporting their learning and project crafting under the great halls of Neuromatch.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">Spring 2024</div>
+                                <div class="adventure-content">
+                                    <h4>Assistant to the Deep Learning Scribes</h4>
+                                    <p>Aided seekers in deciphering the tomes of Deep Learning at the Citadel of Tarbiat Modares.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">Fall 2023</div>
+                                <div class="adventure-content">
+                                    <h4>Assistant to the Machine Learning Circle</h4>
+                                    <p>Offered guidance and crafted challenges for apprentices studying Machine Learning within TMU's hidden chambers.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">Fall 2023</div>
+                                <div class="adventure-content">
+                                    <h4>Assistant to the Order of Special Topics</h4>
+                                    <p>Supported learning rites across rare and evolving domains of Data Science.</p>
+                                </div>
+                            </div>
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">Spring 2021</div>
+                                <div class="adventure-content">
+                                    <h4>Assistant in the First Scrolls of Data Mining</h4>
+                                    <p>Guided fledgling miners through the deep veins of data within Amirkabir Keep's ancient halls.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="adventure-section">
+                        <h3 class="subsection-title">Other Ventures</h3>
+                        <div class="adventure-timeline">
+
+                            <div class="adventure-entry">
+                                <div class="adventure-year">2024 – Present</div>
+                                <div class="adventure-content">
+                                    <h4>Software Test Enchanter</h4>
+                                    <p>At the House of Digipay, I wove a tapestry of manual trials and automated incantations, ensuring the resilience of merchant systems through test enchantments guarding payment spells, user rites, and merchant contracts.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        
+
+        <section id="publications" class="win98-window">
+            <div class="window-title">
+                <span>Research Scrolls</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="grid-container">
+
+                    <div class="item-card">
+                        <h3>Hierarchical Local-Global Tensor Layer (HLGTL) in Deep Convolutional Neural Networks</h3>
+                        <p class="education-stats">2025 <span class="tag-under-review">[Under Review]</span></p>
+                        <p>Explores the design of a new tensor-based layer, blending local and global features, to enhance deep convolutional architectures.</p>
+                        <p><em>Submitted to: Expert Systems With Applications</em></p>
+                        <button class="button-98" disabled>View Paper</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="win98-window">
+            <div class="window-title">
+                <span>Side Quests</span>
+                <div class="window-controls">
+                    <button class="button-98" disabled>_</button>
+                    <button class="button-98" disabled>□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="grid-container">
+
+                    <div class="item-card">
+                        <h3>Negative Scoring Within Attention Mechanisms</h3>
+                        <p>Investigating the introduction of negative scoring schemes within transformer attention to enhance representational focus.</p>
+                    </div>
+
+                    <div class="item-card">
+                        <h3>Local-Global Hybrid Vision Transformers for Small-Scale Datasets</h3>
+                        <p>Designing vision architectures that blend local and global feature modeling, optimized for limited data realms.</p>
+                    </div>
+
+                    <div class="item-card">
+                        <h3>Multi-Level Laplacian Eigenmaps</h3>
+                        <p>Developing hierarchical spectral methods for advanced graph and manifold learning tasks.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact" class="win98-window">
+            <div class="window-title">
+                <span>Contact Portal</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="grid-container">
+                    <div class="item-card">
+                        <h3>Email</h3>
+                        <p class="contact-link">a.m.kharazi.ac@gmail.com</p>
+                        <a href="mailto:a.m.kharazi.ac@gmail.com" class="button-98">Send Message</a>
+                    </div>
+                    <div class="item-card">
+                        <h3>LinkedIn</h3>
+                        <p class="contact-link">/in/amir-mohammad-kharazi</p>
+                        <a href="https://www.linkedin.com/in/amir-mohammad-kharazi" target="_blank" class="button-98">Connect</a>
+                    </div>
+                    <div class="item-card">
+                        <h3>ORCID</h3>
+                        <p class="contact-link">orcid.org/0009-0008-4892-1569</p>
+                        <a href="https://orcid.org/my-orcid?orcid=0009-0008-4892-1569" target="_blank" class="button-98">View Profile</a>
+                    </div>
+                    <div class="item-card">
+                        <h3>GitHub</h3>
+                        <p class="contact-link">github.com/amkharazi</p>
+                        <a href="https://github.com/amkharazi?tab=repositories" target="_blank" class="button-98">View Repositories</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="win98-window">
+            <div class="window-title">
+                <span>Games Portal</span>
+                <div class="window-controls">
+                    <button class="button-98">_</button>
+                    <button class="button-98">□</button>
+                    <button class="button-98">×</button>
+                </div>
+            </div>
+            <div class="window-content">
+                <div class="grid-container">
+                    <div class="item-card">
+                        <div class="game-title-container">
+                            <h3>Sudoku</h3>
+                            <a href="games/sudoku.html" target="_blank" class="button-98">Play Game</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="data/news.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
+                    
